@@ -117,6 +117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 232362523}
   - component: {fileID: 232362522}
+  - component: {fileID: 232362524}
   m_Layer: 0
   m_Name: deltaDNA-Tutorial
   m_TagString: Untagged
@@ -148,6 +149,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &232362524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 232362521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a90a0e0490cc2440a1c044d05210b5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &645455427
 GameObject:
   m_ObjectHideFlags: 0
