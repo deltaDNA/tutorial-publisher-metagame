@@ -107,6 +107,7 @@ namespace metagameTutorial
             try
             {
                events.Add(DeltaDNA.MiniJSON.Json.Serialize(eventSchema));
+                DeltaDNA.Logger.LogDebug(string.Format("Sending MetaGame '{0}' event", gameEvent.Name));
             }
             catch (Exception ex)
             {

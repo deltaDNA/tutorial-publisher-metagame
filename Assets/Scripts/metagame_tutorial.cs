@@ -110,7 +110,7 @@ namespace metagameTutorial
         // Primary Game Campaign Check
         private void PrimaryGameCampaignCheck()
         {
-            DeltaDNA.Logger.LogDebug("Primary Campaign Check");
+            Debug.Log("Primary Campaign Check");
             var engagement = new Engagement("gameStarted")
                  .AddParam("userLevel", this.userLevel); 
 
