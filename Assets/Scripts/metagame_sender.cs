@@ -59,6 +59,14 @@ namespace metagameTutorial
         }
 
 
+        ////////////////////////////////////////////////////////////////////
+        // Publisher MetaGame Campaign Check 
+        public void MetaGameCampaignCheck()
+        {
+            DeltaDNA.Logger.LogDebug("MetaGame Campaign Check Click");
+        }
+
+
 
 
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -67,7 +75,7 @@ namespace metagameTutorial
         // In Assets\DeltaDNA\DDNA.cs
         // They don't use local cached storage as they are sending to a different API endpoint than the DDNA SDK Instance.        
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        
+
 
         // Build Events and store them as JSON strings in a LIST
         private void RecordMetaGameEvent<T>(T gameEvent) where T : GameEvent<T>
