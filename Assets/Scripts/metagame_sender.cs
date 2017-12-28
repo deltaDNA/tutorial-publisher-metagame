@@ -13,9 +13,7 @@ namespace metagameTutorial
         private const string ENVIRONMENT_KEY                = "49994906769133941928339970015138";
         private const string COLLECT_REST_API_URL           = "https://collect12660pblsh.deltadna.net/collect/api";
         private const string ENGAGE_REST_API_URL            = "https://engage12660pblsh.deltadna.net";
-        private const string GAME_ID                        = "1";
-        private const string GAME_NAME                      = "Simple Game";
-        private const string GAME_GENRE                     = "Shootem Up";
+
 
         public bool IsUploading { get; private set; }
 
@@ -80,9 +78,9 @@ namespace metagameTutorial
             // Note: The gameID, gameName and gameGenre parameters for capturing which game is being played for the Publisher Metagame view.
             gameEvent.AddParam("platform", DDNA.Instance.Platform);
             gameEvent.AddParam("sdkVersion", Settings.SDK_VERSION);
-            gameEvent.AddParam("gameID", GAME_ID);
-            gameEvent.AddParam("gameName", GAME_NAME);
-            gameEvent.AddParam("gameGenre", GAME_GENRE);
+            gameEvent.AddParam("gameID", metagame_tutorial.GAME_ID);
+            gameEvent.AddParam("gameName", metagame_tutorial.GAME_NAME);
+            gameEvent.AddParam("gameGenre", metagame_tutorial.GAME_GENRE);
 
             var eventSchema = gameEvent.AsDictionary();
             eventSchema["userID"]       = DDNA.Instance.UserID;

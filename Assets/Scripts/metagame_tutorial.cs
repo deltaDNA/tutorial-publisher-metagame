@@ -12,6 +12,10 @@ namespace metagameTutorial
         public UnityEngine.UI.Text txtLevel;
         public UnityEngine.UI.Text txtCoins;
 
+        public const string GAME_ID = "1";
+        public const string GAME_NAME = "Simple Game";
+        public const string GAME_GENRE = "Shootem Up";
+
         private int userLevel =  1;
         private int userCoins =  0;       
 
@@ -125,7 +129,10 @@ namespace metagameTutorial
         {
             Debug.Log("MetaGame Campaign Check");
             var engagement = new Engagement(decisionPoint)
-                 .AddParam("userLevel", this.userLevel);
+                .AddParam("userLevel", this.userLevel)
+                .AddParam("gameID", GAME_ID)
+                .AddParam("gameName", GAME_NAME)
+                .AddParam("gameGenre", GAME_GENRE);
             metagame_sender MetaGameSender = gameObject.GetComponent<metagame_sender>();
             // Make request to Engage In-Game campaign system to see 
             // if there are any active campaigns for this player at this time
